@@ -1,0 +1,332 @@
+[
+  {
+    "name": "size",
+    "title": "Area Size",
+    "inputs": [
+      {
+        "type": "slider",
+        "min": 120,
+        "max": 880,
+        "label": "Width",
+        "name": "width",
+        "step": 10
+      },
+      {
+        "type": "slider",
+        "min": 120,
+        "max": 880,
+        "label": "Height",
+        "name": "height",
+        "step": 10
+      },
+      {
+        "type": "color",
+        "name": "bgColor",
+        "label": "Colour"
+      }
+    ]
+  },
+  {
+    "name": "background",
+    "title": "Background Image",
+    "inputs": [
+      {
+        "type": "radio",
+        "name": "bgType",
+        "label": "Background Type",
+        "subInput": [
+          {
+            "type": "none",
+            "name": "",
+            "label": "None"
+          },
+          {
+            "type": "file",
+            "name": "bgUploadImage",
+            "label": "Upload Image"
+          },
+          {
+            "type": "url",
+            "name": "bgUrlImage",
+            "label": "Image URL"
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "label": "Image Filters",
+        "colSize": 6,
+        "name": "imageSetting",
+        "subInput": [
+          {
+            "type": "slider",
+            "min": 0,
+            "max": 200,
+            "suffix": "%",
+            "label": "Brightness",
+            "name": "brightness",
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Contrast",
+            "name": "contrast",
+            "min": 0,
+            "max": 200,
+            "suffix": "%",
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Hue Change",
+            "name": "hue",
+            "min": 0,
+            "max": 360,
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Saturation",
+            "name": "saturate",
+            "min": 0,
+            "max": 200,
+            "suffix": "%",
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Grayscale",
+            "name": "grayscale",
+            "min": 0,
+            "max": 100,
+            "suffix": "%",
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Sepia",
+            "name": "sepia",
+            "min": 0,
+            "max": 100,
+            "suffix": "%",
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "Blur",
+            "name": "blur",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "Opacity",
+            "name": "opacity",
+            "min": 0,
+            "max": 100,
+            "suffix": "%",
+            "step": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "quote",
+    "title": "Quote",
+    "inputs": [
+      {
+        "type": "textarea",
+        "label": "Quote Text",
+        "name": "text"
+      },
+      {
+        "type": "select",
+        "list": [
+          "Arial",
+          "Cormorant SC",
+          "Dancing Script",
+          "Georgia",
+          "Helvetica",
+          "Ma Shan Zheng",
+          "Merienda",
+          "Raleway",
+          "Roboto",
+          "Square Peg"
+        ],
+        "label": "Font",
+        "name": "fontFamily"
+      },
+      {
+        "type": "slider",
+        "min": 8,
+        "max": 128,
+        "label": "Text Size",
+        "name": "fontSize",
+        "step": 2
+      },
+      {
+        "type": "color",
+        "label": "Text Colour",
+        "name": "color"
+      },
+      {
+        "type": "slider",
+        "label": "Text Max Width",
+        "name": "maxWidth",
+        "min": 100,
+        "max": 800,
+        "step": 10
+      },
+      {
+        "type": "group",
+        "label": "Text Shadow Settings",
+        "colSize": 6,
+        "name": "shadowSetting",
+        "subInput": [
+          {
+            "type": "color",
+            "label": "Shadow Colour",
+            "name": "shadowColor"
+          },
+          {
+            "type": "slider",
+            "label": "Opacity",
+            "name": "shadowOpacity",
+            "min": 0,
+            "max": 100,
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "X-Axis Offset",
+            "name": "shadowOffsetX",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "Y-Axis Offset",
+            "name": "shadowOffsetY",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "Blur",
+            "name": "shadowBlur",
+            "min": 0,
+            "max": 10
+          }
+        ]
+      },
+      {
+        "type": "switch",
+        "label": "Is italic",
+        "name": "italic"
+      },
+      {
+        "type": "toggleGroup",
+        "label": "Horizontal Alignment",
+        "name": "horizontalColAlignment"
+      },
+      {
+        "type": "toggleGroup",
+        "label": "Vertical Alignment",
+        "name": "verticalColAlignment"
+      }
+    ]
+  },
+  {
+    "name": "author",
+    "title": "Author",
+    "inputs": [
+      {
+        "type": "text",
+        "label": "Author Name",
+        "name": "text"
+      },
+      {
+        "type": "select",
+        "list": [
+          "Arial",
+          "Cormorant SC",
+          "Dancing Script",
+          "Georgia",
+          "Helvetica",
+          "Ma Shan Zheng",
+          "Merienda",
+          "Raleway",
+          "Roboto",
+          "Square Peg"
+        ],
+        "label": "Font",
+        "name": "fontFamily"
+      },
+      {
+        "type": "slider",
+        "min": 8,
+        "max": 48,
+        "label": "Text Size",
+        "name": "fontSize"
+      },
+      {
+        "type": "color",
+        "label": "Text Colour",
+        "name": "color"
+      },
+      {
+        "type": "group",
+        "label": "Text Shadow Settings",
+        "colSize": 6,
+        "name": "shadowSetting",
+        "subInput": [
+          {
+            "type": "color",
+            "label": "Shadow Colour",
+            "name": "shadowColor"
+          },
+          {
+            "type": "slider",
+            "label": "Opacity",
+            "name": "shadowOpacity",
+            "min": 0,
+            "max": 100,
+            "step": 10
+          },
+          {
+            "type": "slider",
+            "label": "X-Axis Offset",
+            "name": "shadowOffsetX",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "Y-Axis Offset",
+            "name": "shadowOffsetY",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "Blur",
+            "name": "shadowBlur",
+            "min": 0,
+            "max": 10
+          }
+        ]
+      },
+      {
+        "type": "switch",
+        "label": "Is italic",
+        "name": "italic"
+      },
+      {
+        "type": "toggleGroup",
+        "label": "Horizontal Alignment",
+        "name": "horizontalTextAlignment"
+      }
+    ]
+  }
+]
